@@ -51,7 +51,7 @@ export default function UserForm({ setData, setLoading, loading }) {
       let errorResponse = await response.json();
       console.error("Error response: ", errorResponse);
       setLoading(false);
-      toast.error(errorResponse.error || "Unknown error");
+      toast.error(errorResponse.error);
     }
   };
 

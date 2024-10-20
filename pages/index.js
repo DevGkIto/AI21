@@ -4,7 +4,6 @@ import { useState } from "react";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
-import Footer from "@/components/Footer";
 import UserForm from "@/components/UserForm";
 import TableToPDF from "@/components/TableToPDF";
 
