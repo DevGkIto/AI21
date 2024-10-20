@@ -3,7 +3,7 @@ const CustomTableHeader = ({ colName }) => (
 );
 
 const CustomTableData = ({ data, type }) => (
-  <td className="border-b border-slate-100 p-4 text-primary-dark">{data}</td>
+  <td className="border-b border-gray-200 p-4 text-purple-800">{data}</td>
 );
 
 const CustomTable = ({ exercises }) => {

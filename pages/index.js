@@ -37,12 +37,10 @@ export default function Home() {
               >
                 Working on it...
               </div>
-            ) : data.length > 0 ? ( // Check if data has length greater than 0
+            ) : data.length > 0 ? (
               <TableToPDF data={data} />
             ) : (
-              <div className="w-full text-center text-red-500 p-2">
-                Failed to load Data
-              </div>
+              <></>
             )}
           </div>
         </div>

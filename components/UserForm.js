@@ -21,24 +21,14 @@ export default function UserForm({ setData, setLoading, loading }) {
     const goal = event.target.elements.goal.value;
 
     // Create an object with the form values
-    // const formData = {
-    //   height,
-    //   weight,
-    //   age,
-    //   gender,
-    //   fitnessLevel,
-    //   goal,
-    //   model,
-    // };
-
     const formData = {
-      height: "180",
-      weight: "75",
-      age: "30",
-      gender: "male",
-      fitnessLevel: "intermediate",
-      goal: "strength",
-      model: "ai21",
+      height,
+      weight,
+      age,
+      gender,
+      fitnessLevel,
+      goal,
+      model,
     };
 
     console.log("Submitting form with data:", formData);
@@ -109,12 +99,12 @@ export default function UserForm({ setData, setLoading, loading }) {
         <button
           type="submit"
           disabled={loading}
-          className="rounded-md bg-primary-main px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark disabled:bg-primary-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="rounded-md bg-purple-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-purple-700 disabled:bg-purple-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-300"
         >
           {loading ? (
             "Please wait..."
           ) : (
-            <div className={"flex justify-center items-center gap-2"}>
+            <div className="flex justify-center items-center gap-2">
               Submit <BiSolidSend />
             </div>
           )}
